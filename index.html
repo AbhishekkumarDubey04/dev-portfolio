@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Software Developer & Data Analyst Portfolio</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600&family=Oswald:wght@500;600;700&family=Poppins:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Mobile Hamburger Menu -->
+    <button class="mobile-menu-btn" id="mobile-menu-btn">
+        <i class="fas fa-bars"></i>
+    </button>
+
+    <!-- Fixed Left Sidebar -->
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-profile">
+            <div class="profile-img-container">
+                <img src="assets/profile.png" alt="Profile Image" class="profile-img">
+            </div>
+            <h2 class="sidebar-name">Abhishek Kumar</h2>
+        </div>
+
+        <nav class="sidebar-nav">
+            <ul id="nav-list">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#certifications" class="nav-link">Certifications</a></li>
+                <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="sidebar-footer">
+            <div class="social-links">
+                <a href="https://github.com/AbhishekkumarDubey04" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/abhishek-kumar-a829b1268/" target="_blank"><i
+                        class="fab fa-linkedin-in"></i></a>
+                <a href="mailto:kumarabhishek63858@gmail.com"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+    </aside>
+
+    <!-- Main Scrollable Content -->
+    <main class="main-content">
+
+        <!-- Hero Section -->
+        <section id="home" class="section hero-section animate-on-scroll">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="muted-greeting">HI THERE!</span><br>
+                    I'M <span class="accent-text">ABHISHEK KUMAR</span>
+                </h1>
+                <h2 class="hero-subtitle">Software Developer<br>& Data Analyst</h2>
+                <p class="hero-desc">Building scalable backend systems and transforming data into actionable insights
+                    using modern technologies.</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">VIEW PROJECTS</a>
+                    <a href="#" class="btn btn-secondary">DOWNLOAD RESUME</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="hero-img-wrapper">
+                    <div class="orbit-line"></div>
+                    <img src="assets/profile.png" alt="Profile Vector" class="hero-large-img">
+                    <div class="floating-icons">
+                        <i class="fas fa-code icon-1"></i>
+                        <i class="fas fa-database icon-2"></i>
+                        <i class="fas fa-chart-bar icon-3"></i>
+                        <i class="fas fa-cloud icon-4"></i>
+                        <i class="fas fa-server icon-5"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section about-section animate-on-scroll">
+            <h2 class="section-title">ABOUT ME</h2>
+            <div class="about-summary">
+                <p>I am a Software Developer and Data Analyst with hands-on experience in backend development, REST API
+                    design, and data-driven problem solving. I specialize in building scalable applications using Java
+                    Spring Boot and analyzing complex datasets using Python and R to generate meaningful insights. I
+                    enjoy designing efficient systems and applying analytical thinking to real-world challenges.</p>
+            </div>
+
+            <div class="about-tabs-container">
+                <div class="tabs-header">
+                    <button class="tab-btn active" data-tab="what-i-do">What I Do</button>
+                    <button class="tab-btn" data-tab="highlights">Highlights</button>
+                </div>
+
+                <div class="tab-content active" id="what-i-do">
+                    <div class="what-i-do-grid">
+                        <div class="card what-i-do-card">
+                            <i class="fas fa-server card-icon"></i>
+                            <h3>Backend Development</h3>
+                            <ul>
+                                <li>REST APIs</li>
+                                <li>Spring Boot / Node</li>
+                                <li>Database Design</li>
+                            </ul>
+                        </div>
+                        <div class="card what-i-do-card">
+                            <i class="fas fa-chart-pie card-icon"></i>
+                            <h3>Data Analysis</h3>
+                            <ul>
+                                <li>SQL</li>
+                                <li>Python</li>
+                                <li>Data Visualization</li>
+                            </ul>
+                        </div>
+                        <div class="card what-i-do-card">
+                            <i class="fas fa-laptop-code card-icon"></i>
+                            <h3>Web Development</h3>
+                            <ul>
+                                <li>Responsive UI</li>
+                                <li>Frontend Integration</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-content" id="highlights">
+                    <div class="highlights-grid">
+                        <div class="counter-box">
+                            <span class="counter" data-target="25">0</span>
+                            <span class="counter-label">Projects Completed</span>
+                        </div>
+                        <div class="counter-box">
+                            <span class="counter" data-target="15">0</span>
+                            <span class="counter-label">Technologies Used</span>
+                        </div>
+                        <div class="counter-box">
+                            <span class="counter" data-target="5">0</span>
+                            <span class="counter-label">Certifications Earned</span>
+                        </div>
+                        <div class="counter-box">
+                            <span class="counter" data-target="40">0</span>
+                            <span class="counter-label">Datasets Analyzed</span>
+                        </div>
+                        <div class="counter-box">
+                            <span class="counter" data-target="800">0</span>+
+                            <span class="counter-label">GitHub Contributions</span>
+                        </div>
+                        <div class="counter-box">
+                            <span class="counter" data-target="2">0</span>
+                            <span class="counter-label">Internship Experience</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section skills-section animate-on-scroll">
+            <h2 class="section-title">SKILLS</h2>
+            <div class="skills-grid">
+
+                <div class="skill-category card">
+                    <h3>Programming</h3>
+                    <div class="skill-item">
+                        <div class="skill-info"><span>Java</span><span>90%</span></div>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info"><span>Python</span><span>85%</span></div>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info"><span>JavaScript</span><span>80%</span></div>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 80%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info"><span>SQL</span><span>95%</span></div>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 95%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category card">
+                    <h3>Frameworks</h3>
+                    <div class="skill-badges">
+                        <span class="badge">Spring Boot</span>
+                        <span class="badge">React</span>
+                        <span class="badge">Node.js</span>
+                        <span class="badge">Express</span>
+                        <span class="badge">Hibernate</span>
+                    </div>
+                </div>
+
+                <div class="skill-category card">
+                    <h3>Data Tools</h3>
+                    <div class="skill-badges">
+                        <span class="badge">Pandas</span>
+                        <span class="badge">NumPy</span>
+                        <span class="badge">Power BI</span>
+                        <span class="badge">Excel</span>
+                        <span class="badge">Tableau</span>
+                        <span class="badge">Matplotlib</span>
+                    </div>
+                </div>
+
+                <div class="skill-category card">
+                    <h3>Databases</h3>
+                    <div class="skill-item">
+                        <div class="skill-info"><span>MySQL</span><span>90%</span></div>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info"><span>PostgreSQL</span><span>85%</span></div>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info"><span>MongoDB</span><span>75%</span></div>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 75%"></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="section experience-section animate-on-scroll">
+            <h2 class="section-title">EXPERIENCE & EDUCATION</h2>
+            <div class="timeline-container">
+
+                <div class="timeline-column">
+                    <h3 class="timeline-heading"><i class="fas fa-graduation-cap"></i> Education</h3>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content card">
+                                <h4>B.Tech — Computer Science & Engineering</h4>
+                                <span class="timeline-org">Lovely Professional University</span>
+                                <span class="timeline-date">2022 - 2025</span>
+                                <p>CGPA: 7.63</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content card">
+                                <h4>Diploma — Computer Science & Engineering</h4>
+                                <span class="timeline-org">Lovely Professional University</span>
+                                <span class="timeline-date">2019 - 2022</span>
+                                <p>CGPA: 8.39</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content card">
+                                <h4>Matriculation</h4>
+                                <span class="timeline-org">Sarala Birla Public School</span>
+                                <p>CGPA: 9.4</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-column">
+                    <h3 class="timeline-heading"><i class="fas fa-briefcase"></i> Experience</h3>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content card">
+                                <h4>Analyst Intern</h4>
+                                <span class="timeline-org">Capgemini, Mumbai</span>
+                                <span class="timeline-date">April 2025 - June 2025</span>
+                                <ul>
+                                    <li>Developed a Banking Application using Java, Spring Boot, MySQL, and Angular.
+                                    </li>
+                                    <li>Implemented secure authentication using JWT and Spring Security.</li>
+                                    <li>Built RESTful APIs using Spring Data JPA.</li>
+                                    <li>Worked with Microservices Architecture using Eureka Server and API Gateway.</li>
+                                    <li>Followed Agile methodology and SDLC practices.</li>
+                                    <li>Optimized database performance and scalability.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section projects-section animate-on-scroll">
+            <h2 class="section-title">PROJECTS</h2>
+            <div class="projects-filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="ml">Machine Learning</button>
+                <button class="filter-btn" data-filter="backend">Backend Systems</button>
+                <button class="filter-btn" data-filter="data">Data Analytics</button>
+            </div>
+
+            <div class="projects-grid">
+                <div class="project-card card" data-category="backend">
+                    <div class="project-img-wrapper">
+                        <img src="assets/project_backend.png" alt="Banking Project" class="project-img">
+                        <div class="project-overlay">
+                            <div class="overlay-buttons">
+                                <a href="https://github.com/AbhishekkumarDubey04" target="_blank"
+                                    class="btn btn-primary"><i class="fab fa-github"></i> GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Banking Application</h3>
+                        <div class="project-tags">
+                            <span>Java</span> <span>Spring Boot</span> <span>MySQL</span> <span>Microservices</span>
+                            <span>JWT</span> <span>Swagger</span>
+                        </div>
+                        <p>Built secure banking system with authentication and transaction handling. Implemented service
+                            discovery using Eureka. Used API Gateway for routing. Designed scalable layered backend
+                            architecture.</p>
+                    </div>
+                </div>
+
+                <div class="project-card card" data-category="ml">
+                    <div class="project-img-wrapper">
+                        <img src="assets/project_web.png" alt="Car Price Project" class="project-img">
+                        <div class="project-overlay">
+                            <div class="overlay-buttons">
+                                <a href="https://github.com/AbhishekkumarDubey04" target="_blank"
+                                    class="btn btn-primary"><i class="fab fa-github"></i> GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Used Car Price Prediction</h3>
+                        <div class="project-tags">
+                            <span>R Programming</span> <span>Machine Learning</span>
+                        </div>
+                        <p>Built predictive ML models for vehicle price estimation. Compared Linear Regression, Decision
+                            Tree, KNN, and SVM. Achieved MAE of 1.94. Visualized performance using analytical charts.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="project-card card" data-category="data">
+                    <div class="project-img-wrapper">
+                        <img src="assets/project_data.png" alt="Climate Change Project" class="project-img">
+                        <div class="project-overlay">
+                            <div class="overlay-buttons">
+                                <a href="https://github.com/AbhishekkumarDubey04" target="_blank"
+                                    class="btn btn-primary"><i class="fab fa-github"></i> GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Delhi Climate Change Prediction</h3>
+                        <div class="project-tags">
+                            <span>Python</span> <span>Pandas</span> <span>NumPy</span> <span>Matplotlib</span>
+                            <span>Prophet</span>
+                        </div>
+                        <p>Analyzed historical climate datasets. Forecasted future weather trends using ML models.
+                            Created visualization dashboards.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section id="certifications" class="section cert-section animate-on-scroll">
+            <h2 class="section-title">CERTIFICATIONS</h2>
+            <div class="cert-grid">
+                <div class="cert-card card">
+                    <div class="cert-icon"><i class="fas fa-certificate"></i></div>
+                    <div class="cert-info">
+                        <h3>Oracle Cloud Infrastructure 2025 Certified Generative AI Professional</h3>
+                        <span class="cert-platform">Oracle</span>
+                    </div>
+                </div>
+                <div class="cert-card card">
+                    <div class="cert-icon"><i class="fas fa-database"></i></div>
+                    <div class="cert-info">
+                        <h3>SQL Advanced</h3>
+                        <span class="cert-platform">HackerRank</span>
+                    </div>
+                </div>
+                <div class="cert-card card">
+                    <div class="cert-icon"><i class="fas fa-globe"></i></div>
+                    <div class="cert-info">
+                        <h3>Introduction to Big Data</h3>
+                        <span class="cert-platform">UC San Diego</span>
+                    </div>
+                </div>
+                <div class="cert-card card">
+                    <div class="cert-icon"><i class="fas fa-laptop-code"></i></div>
+                    <div class="cert-info">
+                        <h3>Supervised Machine Learning</h3>
+                        <span class="cert-platform">Stanford / DeepLearning.AI</span>
+                    </div>
+                </div>
+                <div class="cert-card card">
+                    <div class="cert-icon"><i class="fas fa-code"></i></div>
+                    <div class="cert-info">
+                        <h3>R Programming</h3>
+                        <span class="cert-platform">Johns Hopkins University</span>
+                    </div>
+                </div>
+                <div class="cert-card card">
+                    <div class="cert-icon"><i class="fas fa-chart-line"></i></div>
+                    <div class="cert-info">
+                        <h3>Tableau Certification</h3>
+                        <span class="cert-platform">UC Davis</span>
+                    </div>
+                </div>
+                <div class="cert-card card">
+                    <div class="cert-icon"><i class="fas fa-file-excel"></i></div>
+                    <div class="cert-info">
+                        <h3>Excel Basics for Data Analysis</h3>
+                        <span class="cert-platform">IBM</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="section testimonials-section animate-on-scroll">
+            <h2 class="section-title">TESTIMONIALS</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card card">
+                    <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                    <p class="testimonial-text">"Abhishek demonstrates strong backend development skills and analytical
+                        thinking while working on enterprise-level applications."</p>
+                    <div class="testimonial-author">
+                        <div class="author-info">
+                            <h4>Professional Feedback</h4>
+                            <span>Manager / Mentor</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section contact-section animate-on-scroll">
+            <h2 class="section-title">GET IN TOUCH</h2>
+            <div class="contact-container">
+                <div class="contact-info card">
+                    <h3>Contact Information</h3>
+                    <ul class="contact-list">
+                        <li><i class="fas fa-envelope"></i> kumarabhishek63858@gmail.com</li>
+                        <li><i class="fas fa-phone"></i> +91-7654338717</li>
+                        <li><i class="fab fa-linkedin"></i> linkedin.com/in/abhishek-kumar-a829b1268</li>
+                        <li><i class="fab fa-github"></i> github.com/AbhishekkumarDubey04</li>
+                    </ul>
+                </div>
+
+                <div class="contact-form card">
+                    <form action="#" method="POST">
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p class="footer-message">Let's Build Intelligent Systems Together.</p>
+            <p class="copyright">&copy; 2024 Developer Portfolio. All rights reserved.</p>
+        </footer>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
